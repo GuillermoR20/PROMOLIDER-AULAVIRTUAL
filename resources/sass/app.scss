@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+a{
+    color:#448F3C;
+    font-size: 0.8rem;
+}
+b{
+    font-weight: 700;
+}
+
+/* Containers */
+.div-container{
+    background-color: white;
+    padding: 30px 30px 10px 30px;
+    border: 1px solid #EFEFEF;
+    border-radius: 15px;
+
+    margin-bottom: 24px;
+
+}
+     .div-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+     .div-header h2{
+        font-size: 1rem;
+        margin:0px;
+    }
+    .bg-none{
+    
+        background-color: #ffffff00;
+        border: none;
+    }
+
+/* ------------------------------Side Menu -----------------------*/
+.side-menu{
+    width: 230px;
+    height: 100vh;
+    background-color: white;
+    border: 1px solid #EFEFEF;
+    border-bottom: none;
+
+}
+    .side-menu .logo-container{
+        margin:0 auto;
+        padding: 35px 0px 35px 0px;
+    }
+    .side-menu .menu-options{
+        padding-top: 10px;
+    }
+    .side-menu .menu-options li{
+        margin-bottom: 15px;
+    }
+    .side-menu .menu-options li a{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .side-menu .menu-options li i{
+        font-size: 1.5rem;
+        margin: 0px 25px 0px 15px;
+        color: rgb(122, 122, 122);
+    }
+    /* Menú activo */
+    .side-menu .menu-options li a.active{
+        background-color: white;
+        color: #5CC151;
+        border-left: 3px solid #5CC151;
+        border-radius: 0;
+    }
+    .side-menu .menu-options li a.active i{
+        color: #5CC151;
+    }
+/* ------------------------------Main - Class -Right -----------------------*/
+.main-class{
+    width: 100%;
+    background-color: #F8F8F8;
+
+}
+/* ----------------------------header--------------------- */
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #EFEFEF;
+    border-left: none;
+}
+header i{
+    
+    color: rgb(107, 107, 107);
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+/* Button User */
+.user{
+    background-color: #f0f0f0;
+    border-radius: 2rem;
+    padding: 5px;
+}
+    .user .button-user{
+        padding: 0;
+    }
+    .user .bi-chevron-down{
+        font-size: 1.6rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .user .user-menu{
+        margin-top: 10px !important; 
+        padding: 25px 25px 15px 25px;
+        border-radius: 1rem;
+        
+        border: 1px solid #EFEFEF;
+
+    }
+        .user .user-menu li a {
+            padding: 0;
+            margin-bottom: 5px;
+            color: #848484;
+            display: flex;
+        }
+        .user .user-menu li a i{
+            font-size: 1.5rem;
+            margin: 0px 30px 0px 10px;
+        }
+        .user .user-menu li a span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2px;
+        }
+        .user .user-menu .end-session{
+            color: #BC3333;
+        }
+    .user .user-information{
+        display: flex;
+        margin-bottom: 20px;
+        
+    }
+        .user .user-information picture{
+            margin:auto;
+        }
+        .user .user-information img{
+            margin-right: 20px;
+        }
+        .user .user-information h3{
+            font-size: 1.3rem;
+        }
+        .user .user-information p{
+            margin: 0;
+            color: #848484;
+        }
+        .user .user-information p{
+            margin: 0;
+        }
+
+
+/* Notifications */
+
+.notifications,
+.faq{
+    margin-right: 25px;
+    color: black;
+}
+.faq{
+    margin-left: 25px;
+}
+
+.notifications i,
+.faq i {
+    font-size:2rem;
+}
+
+/* Points */
+.points{
+    padding-bottom: 8px;
+}
+.points span{
+    font-weight: 300;
+}
+.points i{
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
+
+
+/* ----------------------------Main--------------------- */
+
+/* Resume */
+main{
+    padding: 40px 90px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.resume-box{
+    height: 150px;
+    padding: 0px 12px 0px 12px;
+    margin-bottom: 24px;
+}
+
+.resume-box div{
+    border:1px solid #EFEFEF;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10PX;
+}
+.resume-box div:first-child{
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+}
+.resume-box div:last-child{
+    border-start-end-radius: 15px;
+    border-end-end-radius: 15px;
+
+}
+.resume-box div.active{
+    color: white;
+    background-color:#99CC93;;
+
+}
+.resume-box div br{
+    margin-top: 10px;
+
+}
+.resume-box div span{
+
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    
+}   
+.resume-box div b{
+
+    font-size: 1.4rem;
+}   
+
+.resume-box div p{
+
+    font-size: 0.8rem;
+    padding-top: 10px;
+    font-weight: 300;
+}  
+
+/* sells & Mesages */
+
+.div-main{
+    padding: 15px 0px 15px 0px;
+}
+    .div-main .item{
+        background-color: #9FBDF8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        border-radius: 15px;
+        height: 70px;
+        margin-bottom: 15px;
+        padding: 0px 20px 0px 20px;
+
+        color: white;
+    }
+    
+        .div-main .div-user{
+            display: flex;
+            align-items: center;
+        }
+        .div-main .item h4{
+            font-size: 0.8rem;
+            margin:0;
+        }
+        .div-main .item p{
+            font-size: 0.8rem;
+            margin: 0;
+        }
+        .div-main .item img{
+            width: 40px;
+            border-radius: 50px;
+            margin-right: 20px;
+        }
+    .div-main .message .text{
+            font-weight: 500;
+            margin-top: 4px;
+    }
+
+/*Stadistics*/
+
+.div-main .stadistics-chart{
+
+    width: 275px !important;
+    height: 275px !important;
+    
+    margin: 0 auto;
+}
+
+/* Mesages */
+.div-main .item.item-message{
+    background-color: #99CC93;
+}
+
+/* Throphy */
+
+    .div-header .trophy-title{
+        display: flex;
+        align-items: center;
+    }
+    .div-header img{
+        margin-right: 20px;
+    }
+
+.steps-container{
+    display: flex;
+    justify-content: center;
+    margin: 75px 0px 75px 0px;
+}
+.steps{
+    display: flex;
+    flex-direction: column;
+}
+    .steps p{
+        font-size: 0.9rem;
+        margin:0;
+    }
+    .steps .step{
+        display: flex;
+    }
+    /* Desactivado */
+    .steps .circle{
+        background-color: #C4C4C4;
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+        margin-right: 40px;
+    }
+
+    .steps .line{
+        border-left: 2px solid #C4C4C4;
+        height: 30px;
+        margin-left: 9px;
+    }
+    /* Active */
+    .steps .circle.active{
+        background-color: #99CC93;
+    }
+
+    .steps .line.active{
+        border-color:  #99CC93;
+    }
+
+
+/*************************************************************************************************************************************************/
+@import 'courses';
